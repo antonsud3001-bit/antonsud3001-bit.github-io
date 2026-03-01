@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Памятка по безопасному использованию интернета и соцсей</title>
+    <style>
+        :root {
+            --primary: #007bff;
+            --bg: #f4f4f4;
+            --text: #333;
+            --card: #fff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: var(--card);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section-header {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+            color: #0d6efd;
+            font-size: 1.1em;
+            margin: 0;
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+        .section-header:hover {
+            background: #f0f8ff;
+            border-color: #cfe3ff;
+        }
+        .icon {
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            border: 1px solid #cbd5e1;
+            background: #eef2ff;
+            font-size: 12px;
+        }
+        .icon.closed {
+            background: #eef2ff;
+        }
+        .icon.open {
+            background: #c2f0d6;
+            border-color: #7bd389;
+        }
+        .tab {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: #fff;
+            border-left: 4px solid var(--primary);
+            padding: 0 16px;
+            margin: 0 0 16px 0;
+        }
+        .tab.open {
+            max-height: 1000px; /* достаточно для содержимого; заменяем на конкретную высоту через скрипт, если нужно */
+            padding: 12px 16px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        .threats {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .tips {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        /* скрытые подпункты внутри заголовков, чтобы клик по заголовку открывал вкладку */
+        .section-header {
+            display: inline-block;
+        }
+        /* стили для вставки изображений */
+        .insert-image {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Памятка по безопасному использованию интернета и социальных сетей</h1>
+        <p>Следуйте этим правилам, чтобы защитить себя и свои данные в сети. Безопасность в интернете — это не только защита от вирусов, но и осознанное поведение.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Основные правила безопасного поведения -->
+        <div class="section">
+            <button class="section-header" data-target="tab-basics" aria-expanded="false" aria-controls="tab-basics" type="button">
+                <span class="icon closed" aria-hidden="true">+</span>
+                Основные правила безопасного поведения
+            </button>
+            <div id="tab-basics" class="tab" role="region" aria-label="Основные правила безопасного поведения">
+                <ul>
+                    <li><strong>Используйте сильные пароли:</strong> Создавайте уникальные пароли длиной не менее 12 символов, включающие буквы, цифры и специальные символы. Используйте менеджеры паролей для хранения.</li>
+                    <li><strong>Включите двухфакторную аутентификацию (2FA):</strong> Добавляйте второй фактор, такой как SMS-код или приложение (например, Google Authenticator), для всех важных аккаунтов.</li>
+                    <li><strong>Не делитесь личной информацией:</strong> Избегайте публикации адреса, номера телефона, даты рождения, финансовых данных или фотографий в открытых источниках. Проверяйте, кто видит ваши посты.</li>
+                    <li><strong>Проверяйте источники и избегайте фишинга:</strong> Будьте осторожны с подозрительными ссылками, email или сообщениями. Проверяйте URL (наведите курсор, чтобы увидеть настоящий адрес), не открывайте вложения от неизвестных отправителей.</li>
+                    <li><strong>Контролируйте настройки приватности:</strong> В соцсетях установите профиль как приватный, ограничивайте доступ к вашим постам, друзьям и геолокации. Регулярно проверяйте и обновляйте эти настройки.</li>
+                    <li><strong>Регулярно обновляйте ПО:</strong> Держите браузеры, антивирусы, операционные системы и приложения в актуальном состоянии. Автоматические обновления помогают закрывать уязвимости.</li>
+                    <li><strong>Избегайте публичных Wi-Fi без защиты:</strong> Используйте VPN для шифрования трафика в общественных сетях. Не проводите финансовые операции или не вводите пароли на незащищенных Wi-Fi.</li>
+                    <li><strong>Не публикуйте компрометирующие материалы:</strong> Помните, что однажды опубликованное в интернете может остаться навсегда. Даже удаленные посты могут быть сохранены другими пользователями.</li>
+                    <li><strong>Обучайтесь и будьте в курсе угроз:</strong> Следите за новостями о кибербезопасности на сайтах Роскомнадзора, Kaspersky, или международных ресурсах вроде CERT. Проходите онлайн-курсы по цифровой грамотности.</li>
+                    <li><strong>Используйте антивирусное ПО:</strong> Установите надежный антивирус и регулярно сканируйте устройство на вирусы и malware.</li>
+                    <li><strong>Защищайте свои устройства:</strong> Не оставляйте компьютер или смартфон без присмотра. Используйте блокировку экрана и биометрию (отпечаток пальца или лицо).</li>
+                    <li><strong>Будьте осторожны с онлайн-покупками:</strong> Покупайте только на проверенных сайтах с HTTPS. Не вводите данные карты на подозрительных ресурсах.</li>
+                    <li><strong>Реагируйте на инциденты быстро:</strong> Если подозреваете взлом аккаунта, смените пароль, отключите 2FA и сообщите в поддержку сервиса. Проверьте подключенные устройства.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Распространенные угрозы в интернете -->
+        <div class="section">
+            <button class="section-header" data-target="tab-threats" aria-expanded="false" aria-controls="tab-threats" type="button">
+                <span class="icon closed" aria-hidden="true">+</span>
+                Распространенные угрозы в интернете
+            </button>
+            <div id="tab-threats" class="tab" role="region" aria-label="Распространенные угрозы в интернете">
+                <div class="threats">
+                    <p><strong>Фишинг:</strong> Мошенники пытаются выманить ваши данные через поддельные emails или сайты. Признаки: срочные просьбы, ошибки в тексте, подозрительные URL.</p>
+                    <p><strong>Вирусы и ransomware:</strong> Зловредное ПО может зашифровать ваши файлы и требовать выкуп. Защититесь регулярными обновлениями и антивирусом.</p>
+                    <p><strong>Социальная инженерия:</strong> Мошенники используют доверие, чтобы получить доступ к вашим данным. Не раскрывайте информацию под давлением.</p>
+                    <p><strong>Кибербуллинг:</strong> Оскорбления и травля в соцсетях. Блокируйте агрессоров и сообщайте администрации платформы.</p>
+                    <p><strong>Утечки данных:</strong> Компании могут терять ваши данные из-за хаков. Используйте уникальные пароли и мониторьте сервисы.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Новая вкладка: Метод проверки вирусов с Dr.Web Cureit (перемещена вниз) -->
+        <div class="section">
+            <button class="section-header" data-target="tab-drweb" aria-expanded="false" aria-controls="tab-drweb" type="button">
+                <span class="icon closed" aria-hidden="true">+</span>
+                Проверка вирусов с Dr.Web CureIt
+            </button>
+            <div id="tab-drweb" class="tab" role="region" aria-label="Проверка вирусов с Dr.Web CureIt">
+                <ol>
+                    <li>Для проверки наличия вирусов на своём компьютере, я использовал антивирусное программное обеспечение: Dr.Web Cureit.</li>
+                    <li>Для этого нужно установить данную программу на свой компьютер, с данного сайта: Dr.Web CureIt! — Лечащая утилита.</li>
+                    <li>После нажатия на кнопку «Скачать Dr.Web Cureit!», вас перебросит на другую страницу веб-сайта, где нужно будет ввести в незаполненные поля ваше Имя и Фамилию, а также ваш email, куда после нажатия клавиши «Запросить», вам придёт письмо на указанную почту, для дальнейшей скачки данного антивирусного программного обеспечения.</li>
+                    <li>После установки данного Антивирусного программного обеспечения и его открытия, появится меню</li>
+                    <li>Для полной проверки компьютера, нужно нажать на клавишу «Выбрать объекты для проверки».</li>
+                    <li>После появится меню</li>
+                    <li>После нужно нажать на квадратик слева от «Объекты проверки», да бы выбрать все файлы для проверки.</li>
+                    <li>После этого нужно нажать на «Щелкните для выбора файлов и папок»</li>
+                    <li>Появится окно</li>
+                    <li>Нужно нажать на квадратик слева от «Мой компьютер», да бы сделать окончательно сделать полную проверку компьютера на вирусы.</li>
+                    <li>После нужно нажать на клавишу «ОК», чтобы сохранить выбор.</li>
+                    <li>Когда вы сделали все данные действия описанные выше, мы нажимаем на кнопку «Запустить проверку». Начнётся проверка файлов всего компьютера, по истечению которой, будет выявлено, были ли найдены какие-либо угрозы на вашем компьютере или нет. Если угроза была найдена, антивирус даст применить меры для её удаления в вашего компьютера.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Полезные советы и ресурсы -->
+        <div class="section">
+            <button class="section-header" data-target="tab-tips" aria-expanded="false" aria-controls="tab-tips" type="button">
+                <span class="icon closed" aria-hidden="true">+</span>
+                Полезные советы и ресурсы
+            </button>
+            <div id="tab-tips" class="tab" role="region" aria-label="Полезные советы и ресурсы">
+                <div class="tips">
+                    <p><strong>Резервное копирование:</strong> Регулярно делайте бэкапы важных данных на внешние носители или облако (Google Drive).</p>
+                    <p><strong>Безопасные браузеры:</strong> Используйте браузеры с встроенной защитой, и расширения для блокировки рекламы и трекеров.</p>
+                    <p><strong>Образовательные ресурсы:</strong> Посетите stopphishing.ru, cyberpolice.ru, Stay Safe Online и пр. Проходите тесты по кибербезопасности.</p>
+                    <p><strong>Экстренные действия:</strong> Если вы стали жертвой, обратитесь в полицию, Роскомнадзор или горячую линию по кибербезопасности. Не платите выкуп хакерам.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Памятка по кибербезопасности. Создано для образовательных целей. Обновлено с дополнительной информацией.</p>
+    </footer>
+
+    <script>
+        // Управление раскрывающимися вкладками по клику на заголовки
+        document.addEventListener('DOMContentLoaded', function () {
+            const headers = document.querySelectorAll('.section-header');
+            headers.forEach(header => {
+                header.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    const tab = document.getElementById(targetId);
+                    const icon = this.querySelector('.icon');
+                    if (!tab) return;
+
+                    const isOpen = tab.classList.contains('open');
+                    // Открыть текущую вкладку и закрыть другие (по желанию можно оставить открытыми несколько)
+                    document.querySelectorAll('.tab.open').forEach(t => t.classList.remove('open'));
+                    document.querySelectorAll('.section-header .icon').forEach(i => i.classList.remove('open', 'closed'));
+
+                    if (!isOpen) {
+                        tab.classList.add('open');
+                        icon.textContent = '−';
+                        icon.classList.remove('closed');
+                        icon.classList.add('open');
+                        this.setAttribute('aria-expanded', 'true');
+                        icon.classList.add('open');
+                    } else {
+                        tab.classList.remove('open');
+                        icon.textContent = '+';
+                        icon.classList.remove('open');
+                        icon.classList.add('closed');
+                        this.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
